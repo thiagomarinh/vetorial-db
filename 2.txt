@@ -1,0 +1,5 @@
+Conversao de Lista de Dicionarios para Dicionario:
+def lista_para_dicionario(lista):
+    return {item['chave']: item['valor'] for item in lista}
+
+

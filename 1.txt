@@ -1,0 +1,4 @@
+Ordenacao de Lista com Funcao Personalizada:
+def ordenar_lista_por_comprimento(lista):
+    return sorted(lista, key=lambda x: len(str(x)))
+

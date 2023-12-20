@@ -1,0 +1,7 @@
+Analise de Frequencia de Palavras em um Texto:
+from collections import Counter
+def analisar_frequencia_palavras(texto):
+    palavras = texto.lower().split()
+    contagem = Counter(palavras)
+    return contagem
+

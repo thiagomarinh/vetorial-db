@@ -1,0 +1,5 @@
+Reversao de Lista em Grupos:
+
+def reverter_lista_em_grupos(lista, tamanho_grupo):
+    return [lista[i:i+tamanho_grupo][::-1] for i in range(0, len(lista), tamanho_grupo)]
+

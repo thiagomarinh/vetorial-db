@@ -1,0 +1,13 @@
+Algoritmo de Busca Binária Recursiva:
+def busca_binaria_recursiva(lista, elemento, inicio=0, fim=None):
+    if fim is None:
+        fim = len(lista) - 1
+    if inicio > fim:
+        return -1
+    meio = (inicio + fim) // 2
+    if lista[meio] == elemento:
+        return meio
+    elif lista[meio] < elemento:
+        return busca_binaria_recursiva(lista, elemento, meio + 1, fim)
+    else:
+        return busca_binaria_recursiva(lista, elemento, inicio, meio - 1)

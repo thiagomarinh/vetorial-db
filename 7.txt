@@ -1,0 +1,8 @@
+Validacao de Expressao Matematica:
+
+def validar_expressao_matematica(expressao):
+    try:
+        resultado = eval(expressao)
+        return True
+    except:
+        return False

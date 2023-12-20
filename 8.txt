@@ -1,0 +1,5 @@
+Transformação de Texto em Camel Case:
+
+def camel_case(texto):
+    palavras = texto.split()
+    return ''.join([palavras[0].lower()] + [palavra.capitalize() for palavra in palavras[1:]])
